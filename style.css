@@ -1,0 +1,108 @@
+/* ===========================
+   Variáveis de Cores
+=========================== */
+:root {
+    --laranka-primario: #E18300;
+    --branco: #ffffff;
+    --fonte-primaria: 'DM Sans', sans-serif;
+    
+    
+    
+}
+
+/* ===========================
+   Reset
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+    background: var(--secondary);
+    padding: 15px 30px;
+}
+
+.container-header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo_header {
+    width: 100px;
+}
+
+/* ===========================
+   Endereço
+=========================== */
+.address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--laranka-primario);
+    font-size: 14px;
+    font-family: var(--fonte-primaria);
+}
+
+.icon-pin {
+    width: 24px;
+}
+
+/* ===========================
+   Botões
+=========================== */
+.header_butoes {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.header_butoes img {
+    width: 50px;
+}
+
+.btn-instagram, .btn-whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 17px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Instagram */
+.btn-instagram {
+    border: 1px solid var(--laranka-primario);
+    color: var(--laranka-primario);
+}
+
+.btn-instagram:hover {
+    background: var(--laranka-primario);
+    color: var(--branco);
+}
+
+/* WhatsApp */
+.btn-whatsapp {
+    background: var(--laranka-primario);
+    color: var(--branco);
+}
+
+.btn-whatsapp:hover {
+    opacity: 0.8;
+}
