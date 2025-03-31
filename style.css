@@ -106,3 +106,350 @@ header {
 .btn-whatsapp:hover {
     opacity: 0.8;
 }
+/* ===========================
+   Container Inicial
+=========================== */
+.container_inicial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem 0 6rem;
+    background: #1c1c1c;
+    color: var(--branco);
+    gap: 30px;
+    margin: 0;
+    
+
+    
+}
+
+/* Imagem do iPhone */
+.imagem_iphone {
+    align-items: flex-end;
+}
+.imagem_iphone img {
+    width: 100%;
+    max-width: 400px;
+    align-items: flex-end;
+    
+    
+}
+
+/* Texto */
+.texto_inicial {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto_inicial h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.texto_inicial p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.botoes_iniciais {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.botoes_iniciais a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+/* Instagram */
+.botoes_iniciais .btn-instagram {
+    border: 1px solid var(--laranka-primario);
+    color: var(--laranka-primario);
+    background: var(--branco);
+}
+
+.botoes_iniciais .btn-instagram:hover {
+    background: var(--laranka-primario);
+    color: var(--branco);
+}
+
+/* WhatsApp */
+.botoes_iniciais .btn-whatsapp {
+    background: var(--branco);
+    color: var(--laranka-primario);
+}
+
+.botoes_iniciais .btn-whatsapp:hover {
+    background: var(--laranka-primario);
+    color: var(--branco);
+}
+
+.botoes_iniciais img {
+    width: 50px;
+}
+/* =========================== 
+   Container Apresentação 
+=========================== */
+
+.container_apresentacao {
+    width: 100%;
+    padding: 4rem 0;
+    background: var(--branco);
+    height: min-content;
+    
+}
+
+.grid_apresentacao {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    
+    height: min-content; 
+}
+
+/* Cada coluna */
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+    
+    
+    
+    
+}
+
+/* Coluna com imagem única ocupa tudo */
+.col1 img,
+.col3 img {
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.col2, .col4 {
+    
+    justify-content: space-between; /* 💥 esse é o segredo */
+    
+}
+/* Colunas com duas imagens */
+.col2 img,
+.col4 img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+/* --------------------- CONTAINER PRODUTOS */
+.container_produtos {
+    width: 100%;
+    padding: 4rem 0;
+    background: linear-gradient(to bottom, #121212, #1c1c1c);
+    color: var(--branco);
+    
+}
+
+.container_produtos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.container_produtos h2 img {
+    height: 40px;
+}
+
+/* Flexbox para desktop */
+.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.produtos_title {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 4rem;
+}
+.produtos_logo {
+    width: 150px;
+}
+/* Card padrão */
+.card_produto {
+    background: var(--branco);
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 180px;
+    min-height: 350px;
+}
+
+.card_produto img {
+    width: 80%;
+    height: auto;
+    
+    
+}
+
+.card_produto p {
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+/* ----------------------------- VERSÃO MOBILE ---------------------------- */
+@media (max-width: 768px) {
+    .container-header {
+        justify-content: center;
+    }
+
+    .logo_header {
+        width: 80px;
+    }
+
+    .address,
+    .header_butoes {
+        display: none;
+    }
+
+    .container_inicial {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem 0 1rem;
+        height: 100vh;
+        gap: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .texto_inicial {
+        width: 100%;
+        order: 1;
+    }
+
+    .texto_inicial h1 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+        
+    }
+
+    .texto_inicial p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 3rem;
+    }
+
+    .botoes_iniciais {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .botoes_iniciais a {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .botoes_iniciais img {
+        width: 25px;
+    }
+
+    /* Imagem */
+    .imagem_iphone {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        pointer-events: none; /* pra não bloquear clique nos botões */
+    }
+
+    .imagem_iphone img {
+        width: auto;
+        max-height: 55%;
+        object-fit: contain;
+    }
+
+    /* Certifica que o texto e botões estão acima da imagem */
+    .texto_inicial, .botoes_iniciais {
+        position: relative;
+        z-index: 2;
+    }
+    
+
+    .grid_apresentacao {
+        grid-template-columns: 1fr 1fr; /* duas colunas */
+        grid-template-rows: auto auto;
+        gap: 20px;
+        column-gap: 0;
+    }
+
+    .col {
+        height: 100%;
+    }
+
+    .col1, .col3 {
+        height: 100%;
+    }
+
+    .col1 img,
+    .col3 img {
+        width: 80%;
+        height: 100%; /* ocupa toda a altura da linha */
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .col2, .col4 {
+        justify-content: space-between;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .col2 img,
+    .col4 img {
+        width: 80%;
+        height: calc(50% - 10px);
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
