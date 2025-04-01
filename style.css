@@ -280,13 +280,14 @@ header {
     height: 40px;
 }
 
-/* Flexbox para desktop */
-.swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
+/* Desktop */
+@media (min-width: 769px) {
+    .swiper-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 }
 .produtos_title {
     display: flex;
@@ -310,7 +311,7 @@ header {
     justify-content:space-between;
     align-items: center;
     width: 180px;
-    min-height: 350px;
+    min-height: 200px;
 }
 
 .card_produto img {
@@ -326,6 +327,8 @@ header {
     font-size: 1rem;
     text-align: center;
 }
+
+/* ------- FOOTER -------------------------------------- */
 
 
 
@@ -451,5 +454,44 @@ header {
         object-fit: cover;
         border-radius: 20px;
     }
+
+
+    .swiper-wrapper {
+        display: flex; /* Swiper já cuida */
+        padding-left: 30px;
+    }
+
+    .card_produto {
+        width: 85%;           /* Largura ideal pro swiper */
+        max-width: 350px;     /* Limitar no máximo */
+        height: 400px;        /* Altura fixa */
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+
+    .card_produto img {
+        padding-top: 1rem;
+        height: auto;
+        max-height: 70%;
+        object-fit: cover;
+    }
+
+    .card_produto p {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        font-family: var(--fonte-primaria);
+    }
+
+    .swiper-pagination {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    
+
 }
 
