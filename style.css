@@ -392,12 +392,96 @@ header {
     font-size: 0.9rem;
     line-height: 1.4;
 }
+.container_clientes_mobile {
+    display: none;
+}
 
+/* ------------------ CONTAINER ESPECIALIDADE ------------------ */
+/* -------- CONTAINER ESPECIALIDADES -------- */
 
+.container_especialidades {
+    padding: 5rem 2rem;
+    background:var(--branco);
+    text-align: center;
+}
 
-/* ------- FOOTER -------------------------------------- */
+.container_especialidades h2 {
+    color: #E18300;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
 
+.container_especialidades p {
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/* Cards */
+.especialidades_cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card_especialidade {
+    background: #F6F6F6;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    box-shadow: 0 0 0 transparent;
+}
+
+.card_especialidade:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.card_especialidade img {
+    width: 70px;
+    margin-bottom: 1rem;
+}
+
+.card_especialidade h3 {
+    color: #E18300;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ------- PELICULAS -------------------------------------- */
+
+.container_peliculas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background: #F6F6F6;
+    gap: 2rem;
+}
+
+.texto_peliculas h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1c1c1c;
+    line-height: 1.2;
+}
+
+.texto_peliculas h2 span {
+    color: #E18300;
+}
+
+.imagem_peliculas img {
+    width: 600px;
+    max-width: 100%;
+}
 
 /* ----------------------------- VERSÃO MOBILE ---------------------------- */
 @media (max-width: 768px) {
@@ -558,7 +642,133 @@ header {
         text-align: center;
     }
 
-    
+    /* CARROSSEL CLIENTES */
+    .container_clientes {
+        display: none;
+    }
 
+    .container_clientes_mobile {
+        display: block;
+        background: #E18300;
+        padding: 4rem 1rem;
+        text-align: center;
+    }
+
+    .container_clientes_mobile h2 {
+        color: #1c1c1c;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .swiper_clientes {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    /* NÃO mexa no swiper-slide */
+    .swiper_clientes .swiper-slide {
+        /* deixa quieto */
+    }
+
+    /* o card sim, você controla */
+    .card_cliente_mobile {
+        background: #fff;
+        border-radius: 15px;
+        padding: 2rem 1.5rem;
+        width: 80%;
+        max-width: 300px;
+        height: 360px;
+        margin: 0 auto; /* ISSO centraliza */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .card_cliente_mobile img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    .card_cliente_mobile p {
+        font-size: 0.9rem;
+        color: #000;
+        line-height: 1.4;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .swiper-pagination {
+        margin-top: 1rem;
+    }
+
+    /* ---------------- CONTAINER ESPECIALIDADE  -------------------- */
+    .container_especialidades {
+        padding: 3rem 1rem;
+    }
+
+    .container_especialidades h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .container_especialidades p {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        max-width: 90%;
+    }
+
+    .especialidades_cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .card_especialidade {
+        width: 90%;
+        max-width: 300px;
+        padding: 1.5rem;
+    }
+
+    .card_especialidade img {
+        width: 60px;
+    }
+
+    .card_especialidade h3 {
+        font-size: 0.95rem;
+    }
+
+
+    /* ------------PELÍCULAS */
+    .container_peliculas {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .texto_peliculas h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        padding: 0 2REM;
+    }
+
+    .texto_peliculas h2 br {
+        display: none; /* opcional caso queira evitar quebra de linha forçada */
+    }
+
+    .imagem_peliculas img {
+        width: 100%;
+        
+        height: auto;
+        margin-top: 2rem;
+    }
 }
 
