@@ -791,12 +791,12 @@ header {
 
     .swiper-wrapper {
         display: flex; /* Swiper já cuida */
-        padding-left: 30px;
+        
     }
 
     .card_produto {
-        width: 85%;           /* Largura ideal pro swiper */
-        max-width: 350px;     /* Limitar no máximo */
+        width: 90%;           /* Largura ideal pro swiper */
+        max-width: 300px;     /* Limitar no máximo */
         height: 400px;        /* Altura fixa */
         min-height: 400px;
         display: flex;
