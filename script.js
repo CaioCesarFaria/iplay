@@ -6,6 +6,10 @@ function handleSwiper() {
             slidesPerView: 1.1,
             spaceBetween: 20,
             loop: true,
+            autoplay: {
+                delay: 3000, // ⏱️ 2 segundos
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -28,6 +32,10 @@ function initDepoimentosSwiper() {
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            autoplay: {
+                delay: 3000, // ⏱️ 2 segundos
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
