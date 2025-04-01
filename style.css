@@ -599,6 +599,51 @@ header {
     height: auto;
 }
 
+/* -------- FOOTER */
+.footer {
+    background: linear-gradient(to bottom, #121212, #1c1c1c);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Logo */
+.logo_footer {
+    width: 180px;
+}
+
+/* Endereço */
+.footer_adress {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    max-width: 400px;
+    line-height: 1.4;
+}
+
+/* Botão WhatsApp */
+.whatsapp_footer {
+    background: #E18300;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.whatsapp_footer img {
+    width: 50px;
+}
 /* ----------------------------- VERSÃO MOBILE ---------------------------- */
 @media (max-width: 768px) {
     .container-header {
@@ -952,6 +997,20 @@ header {
     .imagem_upgrade img {
         width: 90%;
         max-width: 400px;
+    }
+
+    .logo_footer {
+        width: 140px;
+    }
+
+    .footer_adress {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .whatsapp_footer {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
