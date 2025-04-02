@@ -3,7 +3,7 @@ let swiperInstance;
 function handleSwiper() {
     if (window.innerWidth <= 768 && !swiperInstance) {
         swiperInstance = new Swiper('.swiper_produtos', {
-            slidesPerView: 1.1,
+            slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
             autoplay: {
@@ -30,7 +30,7 @@ function initDepoimentosSwiper() {
     if (window.innerWidth <= 768 && !swiperDepoimentos) {
         swiperDepoimentos = new Swiper('.swiper_clientes', {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
             loop: true,
             autoplay: {
                 delay: 3000, // ⏱️ 2 segundos
