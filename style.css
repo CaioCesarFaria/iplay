@@ -668,7 +668,7 @@ header {
     align-items: center;
     padding: 2rem 1rem 0 1rem;
     height: 100vh;
-    gap: 5px;
+    gap: 10px;
     position: relative;
     overflow: hidden;
   }
@@ -711,17 +711,15 @@ header {
     justify-content: center;
     align-items: flex-end;
     height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
+    
+    
+   
     pointer-events: none; /* pra não bloquear clique nos botões */
   }
 
   .imagem_iphone img {
     width: auto;
-    max-height: 55%;
+    
     object-fit: contain;
   }
 
